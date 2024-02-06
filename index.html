@@ -18,6 +18,20 @@
     <link rel="preload" href="./img/bg_s.webp" as="image">
     <link rel="stylesheet" href="./css/normalize.css">
     <script src="./css/hamburger.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#c3642e">
+    <meta name="apple-mobile-web-app-title" content="PizzaKing">
+    <meta name="application-name" content="PizzaKing">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#343434">
+    <meta property="og:title" content="PizzaKing Cutter - originální kráječ na pizzu"> 
+    <meta property="og:description" content="PizzaKing Cutter je víc než jen kráječ na pizzu, je to zážitek. Originální designu, ergonomická rukojeť ze dřeva, ruční práce a kvalitní materiály. Vyberte si svůj styl s možností vlastního výběru druhu dřeva a vygravírovaného textu"> 
+    <meta property="og:image" content="./img/OG_img.png">
+    <meta property="og:url" content="https://www.XXXXXXXX">  
+    <meta property="og:site_name" content="PizzaKing Cutter">  
+    <meta property="og:type" content="product">  
+    <meta property="og:locale" content="cs_CZ" />
 </head>
 <body>
     <header>
@@ -177,7 +191,7 @@
     </section>
     <section>
         <h2>Kontaktní formulář</h2>
-        <div>
+        
             <form>
                 <div class="kontakt__wrapper">
                     <div class="kontakt__input">
@@ -194,12 +208,23 @@
                     <input class="kontakt__text" type="text" id="email" name="email" placeholder="petrC@gmail.com" required>
                     <label class="input__nadpis" for="email">Email</label>
                     </div>
+                    
+                    <div class="kontakt__input kontakt__input--material">
+                        <label for="delivery">Rukojeť</label>
+                        <select id="delivery" name="delivery">
+                            <option value="palisandr">Palisandr</option>
+                            <option value="dub">Dub</option>
+                            <option value="briza">Bříza</option>
+                        </select>
+                    </div>
+                    </div>
                 </div>
-              <div class="kontakt__input">
-                <textarea class="kontakt__text kontakt__input--zprava" name="text" id="zprava" cols="30" rows="10" placeholder="Neváhejte napsat"></textarea>
-                <label class="input__nadpis input__nadpis--zprava" for="zprava">Zpráva</label>
-              </div>
+                <div class="kontakt__input">
+                    <textarea class="kontakt__text kontakt__input--zprava" name="text" id="zprava" cols="30" rows="10" placeholder="Neváhejte napsat"></textarea>
+                    <label class="input__nadpis input__nadpis--zprava" for="zprava">Zpráva</label>
+                </div>
             </form>
+
             <div class="kontakt__info">
                 <div class="iconCard iconCard--kontakt">
                     <img class="iconCard__icon" src="./img/icon_price_y.svg" alt="ikona pro cenu">
@@ -211,7 +236,6 @@
                 </div>
                 <a class="button" href="#">Odeslat</a>
             </div>
-        </div>
         
     </section>
    
