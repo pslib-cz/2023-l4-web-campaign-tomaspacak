@@ -148,7 +148,7 @@ img {width: 100%; display: block;}
 }
 .input__nadpis {
     position: absolute;
-    top: -0.25rem;
+    top: -0.8rem;
     pointer-events: none;
     left: 20px;
     padding: 0.25em;
@@ -157,21 +157,17 @@ img {width: 100%; display: block;}
     -webkit-transition: 0.2s ease all;
     background-color: white;
 }
-kontakt__text--zprava
-.input__nadpis--zprava {top: -0.8rem;}
 .kontakt__text:focus ~ label {
-    top: -0.5rem;
+    top: -1rem;
     font-size: 14px;
     color: var(--btn);
 }
-/*.kontakt__text--zprava:focus ~ label {
-    top: -2rem;
-}*/
+
 .kontakt__text:focus-visible {
     border: var(--btn) 2px solid;
     outline: none;
-
 }
+
 .kontakt__info {
     display: flex;
     justify-content: center;
@@ -179,17 +175,7 @@ kontakt__text--zprava
     position: relative;
     margin-bottom: 4rem;
 }
-.kontakt__text--zprava {margin: 0;}
-select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.kontakt__input--material {}   /*ddddddddddd*/
+
 .kontakt__info::after {
     content: 'Odesláním souhlasíte se spracováním dat.';
     position: absolute;
