@@ -31,6 +31,12 @@
     <meta property="og:site_name" content="PizzaKing Cutter">  
     <meta property="og:type" content="product">  
     <meta property="og:locale" content="cs_CZ" />
+    <link rel="stylesheet" href="./LG/lg-thumbnail.css">
+    <link rel="stylesheet" href="./LG/lg-zoom.css">
+    <link rel="stylesheet" href="./LG/lightgallery.css">
+    <script src="./LG/lightgallery.min.js"></script>
+    <script src="./LG/lg-thumbnail.min.js"></script>
+    <script src="./LG/lg-zoom.min.js"></script>
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -74,6 +80,7 @@
                         <li class="menu__item"><a href="#pribeh">Náš příběh</a></li>
                         <li class="menu__item"><a href="#vyroba">Výroba</a></li>
                         <li class="menu__item"><a href="#galerie">Galerie</a></li>
+                        <li class="menu__item"><a href="#formular">Kontaktní formulář</a></li>
                     </menu>
                 </nav>
             </div>
@@ -182,28 +189,28 @@
                 </div>
             </div>
         </section>
-        
     </div>
+    
     <section id="galerie">
         <h2><span class="title--modify">Galerie</span></h2>
         <div class="gallery">
             <div class="gItem">
-                <a class="gItem__link" href="#"><img class="gItem__img" src="./img/g1.webp" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
+                <a class="gItem__link" href="./img/g1.webp"><img class="gItem__img" src="./img/g1.webp" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
             </div>
             <div class="gItem gItem gItem--2">
-                <a class="gItem__link" href="#"><img class="gItem__img" sizes="(max-widht: 630px) 50vw, (min-widht: 630) 75vw" src="./img/g2.webp" srcset="./img/g2.webp 500w, ./img/g2_b.webp 1100w" alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
+                <a class="gItem__link" href="./img/g2_b.webp"><img class="gItem__img" sizes="(max-widht: 630px) 50vw, (min-widht: 630) 75vw" src="./img/g2.webp" srcset="./img/g2.webp 500w, ./img/g2_b.webp 1100w" alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
             </div>
             <div class="gItem gItem--3">        
-                <a class="gItem__link" href="#"><img class="gItem__img" sizes="(max-widht: 630px) 90vw, (min-widht: 630) 30vw" src="./img/g3.webp" srcset="./img/g3.webp 500w, ./img/g3_b.webp 1100w" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
+                <a class="gItem__link" href="./img/g3_b.webp"><img class="gItem__img" sizes="(max-widht: 630px) 90vw, (min-widht: 630) 30vw" src="./img/g3.webp" srcset="./img/g3.webp 500w, ./img/g3_b.webp 1100w" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
             </div>
             <div class="gItem">
-                <a class="gItem__link" href="#"><img class="gItem__img" src="./img/g4.webp" alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
+                <a class="gItem__link" href="./img/g4.webp"><img class="gItem__img" src="./img/g4.webp" alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
             </div>
             <div class="gItem">
-                <a class="gItem__link" href="#"><img class="gItem__img" src="./img/g5.webp" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
+                <a class="gItem__link" href="./img/g5.webp"><img class="gItem__img" src="./img/g5.webp" alt="Kvalitní kráječ pizzy s dřevěnou rukojetí"></a>
             </div>
             <div class="gItem gItem--6">
-                <a class="gItem__link" href="#"><img class="gItem__img" sizes="(max-widht: 630px) 90vw, (min-widht: 630) 30vw" src="./img/g6.webp" srcset="./img/g6.webp 500w, ./img/g6_b.webp 1100w" alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
+                <a class="gItem__link" href="./img/g6_b.webp"><img class="gItem__img" sizes="(max-widht: 630px) 90vw, (min-widht: 630) 30vw" src="./img/g6.webp" srcset="./img/g6.webp 500w, ./img/g6_b.webp 1100w" alt="Zakázkový kráječ na pizzu od PizzaKing"></a>
             </div>
         </div>
         <div class="gallery__buttons">
@@ -211,54 +218,52 @@
             <a class="button button--2" href="mailto:pizzakingcutter@gmail.com">Napište nám</a>
         </div>
     </section>
-    <section>
+
+    <section id="formular">
         <h2>Kontaktní formulář</h2>
-        
-            <form>
-                <div class="kontakt__wrapper">
-                    <div class="kontakt__input">
+        <form>
+            <div class="kontakt__wrapper">
+                <div class="kontakt__input">
                     <input class="kontakt__text" type="text" id="name" name="name" placeholder="Petr Novotný" required>
                     <label class="input__nadpis" for="name">Jméno a přijmení</label>
-                    </div>
-                
-                    <div class="kontakt__input">
+                </div>
+            
+                <div class="kontakt__input">
                     <input class="kontakt__text" type="text" id="phone" name="phone" placeholder="+420 123 456 789" required>
                     <label class="input__nadpis" for="phone">Telefonní číslo</label>
-                    </div>
-                
-                    <div class="kontakt__input">
+                </div>
+            
+                <div class="kontakt__input">
                     <input class="kontakt__text" type="text" id="email" name="email" placeholder="petrN@gmail.com" required>
                     <label class="input__nadpis" for="email">Email</label>
-                    </div>
-                    
-                    <div class="kontakt__input kontakt__input--material">
-                        <select class="kontakt__text" id="delivery" name="delivery">
-                            <option value="palisandr">Palisandr</option>
-                            <option value="dub">Dub</option>
-                            <option value="briza">Bříza</option>
-                        </select>
-                        <label class="input__nadpis" for="delivery">Rukojeť</label>
-                    </div>
-                    </div>
                 </div>
-                <div class="kontakt__input kontakt__input--zprava">
-                    <textarea class="kontakt__text kontakt__text--zprava " name="text" id="zprava" cols="30" rows="10" placeholder="Neváhejte napsat"></textarea>
-                    <label class="input__nadpis input__nadpis--zprava" for="zprava">Zpráva</label>
+                
+                <div class="kontakt__input kontakt__input--material">
+                    <select class="kontakt__text" id="delivery" name="delivery">
+                        <option value="palisandr">Palisandr</option>
+                        <option value="dub">Dub</option>
+                        <option value="briza">Bříza</option>
+                    </select>
+                    <label class="input__nadpis" for="delivery">Rukojeť</label>
                 </div>
-            </form>
-
-            <div class="kontakt__info">
-                <div class="iconCard iconCard--kontakt">
-                    <img class="iconCard__icon" src="./img/icon_price_y.svg" alt="ikona pro cenu">
-                    <div class="iconCard__line"></div>
-                    <div class="iconCard__text">
-                        <p class="iconCard__title">Cena</p>
-                        <p class="iconCard__desc">2 500 Kč</p>
-                    </div>
-                </div>
-                <a class="button" href="./caseStudy.html">Odeslat</a>
             </div>
-        
+            <div class="kontakt__input kontakt__input--zprava">
+                <textarea class="kontakt__text kontakt__text--zprava " name="text" id="zprava" cols="30" rows="10" placeholder="Neváhejte napsat"></textarea>
+                <label class="input__nadpis input__nadpis--zprava" for="zprava">Zpráva</label>
+            </div>
+        </form>
+
+        <div class="kontakt__info">
+            <div class="iconCard iconCard--kontakt">
+                <img class="iconCard__icon" src="./img/icon_price_y.svg" alt="ikona pro cenu">
+                <div class="iconCard__line"></div>
+                <div class="iconCard__text">
+                    <p class="iconCard__title">Cena</p>
+                    <p class="iconCard__desc">2 500 Kč</p>
+                </div>
+            </div>
+            <a class="button" href="./caseStudy.html">Odeslat</a>
+        </div>
     </section>
    
     <footer>
@@ -281,5 +286,13 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+		lightGallery(
+			document.querySelector("section > .gallery"), {
+			plugins: [lgZoom, lgThumbnail],
+			speed: 500,
+			selector: ".gItem > a"
+		});
+	</script>
 </body>
 </html>
