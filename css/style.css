@@ -89,10 +89,7 @@ main {
     transform: translate(-50%, 0%); left: 50%;
     box-shadow: -5px 4px 8px 0px rgba(0, 0, 0, 0.50);
 }
-.story__text {
-    background-color: var(--primarC);
-    padding: 1.5rem;
-}
+.story__text {background-color: var(--primarC); padding: 1.5rem;}
 .story__desc {color: var(--textAlt);}
 
 /*btn*/
@@ -105,15 +102,8 @@ main {
     border: solid var(--btn) 3px;
     margin: 0.25rem;
 }
-.button--2 {
-    background-color: transparent;
-    color: var(--btn);
-}
-.button:hover {
-    background-color: var(--title);
-    border: solid var(--title) 3px;
-    transition: 0.5s;
-}
+.button--2 {background-color: transparent; color: var(--btn);}
+.button:hover {background-color: var(--title); border: solid var(--title) 3px; transition: 0.5s;}
 .button--2:hover {color: var(--wh);}
 .button--center {position: relative; transform: translate(-50%, 0%); left: 50%; margin-top: 1rem;}
 
@@ -130,6 +120,12 @@ main {
     width: fit-content;
 }
 img {width: 100%; display: block;}
+
+.gItem {overflow: hidden;}
+.gItem__img {transition: 0.5s;}
+.gItem__link:hover .gItem__img {transform: scale(1.09);transition: 1s;}
+.gallery:has(.gItem__link:hover) .gItem__img {filter: blur(12px);}
+.gallery .gItem__link:hover .gItem__img {filter: blur(0);}
 
 /*formular*/
 .kontakt__input {
@@ -157,17 +153,8 @@ img {width: 100%; display: block;}
     -webkit-transition: 0.2s ease all;
     background-color: white;
 }
-.kontakt__text:focus ~ label {
-    top: -1rem;
-    font-size: 14px;
-    color: var(--btn);
-}
-
-.kontakt__text:focus-visible {
-    border: var(--btn) 2px solid;
-    outline: none;
-}
-
+.kontakt__text:focus ~ label {top: -1rem; font-size: 14px; color: var(--btn);}
+.kontakt__text:focus-visible {border: var(--btn) 2px solid; outline: none;}
 .kontakt__info {
     display: flex;
     justify-content: center;
@@ -175,7 +162,6 @@ img {width: 100%; display: block;}
     position: relative;
     margin-bottom: 4rem;
 }
-
 .kontakt__info::after {
     content: 'Odesláním souhlasíte se spracováním dat.';
     position: absolute;
@@ -183,12 +169,8 @@ img {width: 100%; display: block;}
     font-size: 14px;
 }
 .iconCard--kontakt {color: var(--btn);}
+option {min-height: 1.4em; padding: 5em;}
 
-option {
-    min-height: 1.4em;
-    padding: 5em;
-
-}
 
 /*footer*/
 footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
@@ -201,7 +183,7 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
 .footer__socky {
     display: flex;
     align-items: flex-end;
-    gap: 0.6rem;
+    gap: 1rem;
     justify-content: end;
 }
 .footer__logo {width: 10rem;}
@@ -211,15 +193,9 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
     border-top: 1px solid var(--textAlt);
     font-size: 0.8rem;
 }
-.footer__icon:hover {
-    margin-bottom: 0.25rem;
-    transition: 0.5s;
-}
+.footer__icon:hover {margin-bottom: 0.3rem; transition: 0.4s;}
 .footer__icon {transition: 0.5s;}
-.paticka__wrapper {
-    display: flex;
-    gap: 10px;
-}
+.paticka__wrapper {display: flex; gap: 0.5em;}
 
 
 /*hamburger menu*/
@@ -234,20 +210,10 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
     display: flex;
     justify-content: flex-end;
 }
-.hamburger {
-    display: block;
-}
-.hamburger-nav menu {
-    margin: 0;
-    padding: 0;
-}
-.menu__item {
-    display: block;
-    margin: 0;
-}
-.menu__item--button {
-    padding-left: 0;
-}
+.hamburger {display: block;}
+.hamburger-nav menu {margin: 0; padding: 0;}
+.menu__item {display: block; margin: 0;}
+.menu__item--button {padding-left: 0;}
 .navbar__logo {
     position: absolute;
     transform: translate(0%, -50%);
@@ -276,12 +242,9 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
   
 .hamburger span:nth-child(3) { bottom: 0px; }
 
-.hamburger-nav {
-    transform: translateY(-100%);
-    transition: 0.5s;
-}
+.hamburger-nav {transform: translateY(-100%); transition: 0.5s;}
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 949px) { 
     .hamburger-row {
         position: relative;
         z-index: 2;
@@ -296,13 +259,8 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
         font-weight: 500;
         border-top: solid 3px var(--textAlt);
     }
-    .hamburger-nav.active {
-        transform: scaleY(1);
-    }
-    .hamburger-nav.active > .navbar__logo {
-        position: absolute;
-        top: -3em;
-    }
+    .hamburger-nav.active {transform: scaleY(1);}
+    .hamburger-nav.active > .navbar__logo {position: absolute; top: -3em;}
     .hamburger-nav {
         transition: 0.5s;
         position: absolute;
@@ -331,10 +289,8 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
         translate: .6s;
     }
 }
-@media screen and (min-width: 801px) {
-    .hamburger-row {
-        display: none;
-    }
+@media screen and (min-width: 950px) {
+    .hamburger-row {display: none;}
     .hamburger-nav {
         transform: none;
         padding: 1.5em;
@@ -354,17 +310,13 @@ footer {padding: 1rem; background-color: var(--text); color: var(--textAlt);}
         font-weight: 400;
         font-size: 18px;
     }
-    .menu__item {
-       padding: 0.5em;
-       height: fit-content;
-    }
+    .menu__item {padding: 0.5em; height: fit-content;}
     .menu__item a:hover {
-        transform: scale(1.05) .2s;
-        /*transition: .2s;*/
+        transform: scale(0.9);
+        transition: .2s;
         font-weight: 800;
         color: var(--btn);
     }
-    
     .pageWrapper {
         margin: 0;
         max-width: 1200px;
