@@ -121,11 +121,7 @@ main {
 }
 img {width: 100%; display: block;}
 
-.gItem {overflow: hidden;}
-.gItem__img {transition: 0.5s;}
-.gItem__link:hover .gItem__img {transform: scale(1.09);transition: 1s;}
-.gallery:has(.gItem__link:hover) .gItem__img {filter: blur(12px);}
-.gallery .gItem__link:hover .gItem__img {filter: blur(0);}
+
 
 /*formular*/
 .kontakt__input {
